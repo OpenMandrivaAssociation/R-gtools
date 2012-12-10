@@ -1,4 +1,3 @@
-%bcond_with internet
 %global packname  gtools
 %global rlibdir  %{_libdir}/R/library
 
@@ -26,11 +25,6 @@ mkdir -p %{buildroot}%{rlibdir}
 test -d %{packname}/src && (cd %{packname}/src; rm -f *.o *.so)
 rm -f %{buildroot}%{rlibdir}/R.css
 
-%if %{with internet}
-%check
-%{_bindir}/R CMD check %{packname}
-%endif
-
 %files
 %dir %{rlibdir}/%{packname}
 %doc %{rlibdir}/%{packname}/html
@@ -44,3 +38,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Sat Feb 18 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.6.2-1
++ Revision: 777009
+- Import R-gtools
+- Import R-gtools
+
