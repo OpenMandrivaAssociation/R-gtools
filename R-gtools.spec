@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          2.7.1
-Release:          2
+Version:          3.1.1
+Release:          1
 Summary:          Various R programming tools
 Group:            Sciences/Mathematics
 License:          LGPL-2.1
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/gtools_2.7.1.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/gtools_3.1.1.tar.gz
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 
 %description
@@ -45,6 +45,7 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 777009
 - Import R-gtools
 - Import R-gtools
+
 
 
 
