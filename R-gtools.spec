@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          3.3.0
-Release:          1
+Release:          2
 Summary:          Various R programming tools
 Group:            Sciences/Mathematics
 License:          LGPL-2.1
